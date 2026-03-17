@@ -1,0 +1,151 @@
+{
+  "info": {
+    "_postman_id": "38033215-f7d9-4def-8291-aee3b925a01d",
+    "name": "NIC Backend",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "36343794"
+  },
+  "item": [
+    {
+      "name": "Auth",
+      "item": [
+        {
+          "name": "Login",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n  \"email\": \"john@example.com\",\r\n  \"password\": \"123456\"\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{authUrl}}/login",
+              "host": [
+                "{{authUrl}}"
+              ],
+              "path": [
+                "login"
+              ],
+              "query": [
+                {
+                  "key": "email",
+                  "value": "john@example.com",
+                  "disabled": true
+                },
+                {
+                  "key": "password",
+                  "value": "123456",
+                  "disabled": true
+                }
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "register",
+          "request": {
+            "method": "GET",
+            "header": []
+          },
+          "response": []
+        },
+        {
+          "name": "get Id by Name",
+          "request": {
+            "method": "GET",
+            "header": []
+          },
+          "response": []
+        },
+        {
+          "name": "check-email",
+          "request": {
+            "method": "GET",
+            "header": []
+          },
+          "response": []
+        }
+      ]
+    },
+    {
+      "name": "Data",
+      "item": [
+        {
+          "name": "uploadData",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "formdata",
+              "formdata": [
+                {
+                  "key": "file",
+                  "type": "file",
+                  "uuid": "4cc90b31-bbbf-4947-a5eb-e507dd6a394f",
+                  "src": "/C:/Users/thine/Downloads/Untitled spreadsheet - Sheet1.csv"
+                }
+              ]
+            },
+            "url": {
+              "raw": "{{baseurl}}/upload-files",
+              "host": [
+                "{{baseurl}}"
+              ],
+              "path": [
+                "upload-files"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "showAllDetail",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{baseUrl}}/get-all",
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "path": [
+                "get-all"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "getDetailByUserId",
+          "request": {
+            "method": "GET",
+            "header": []
+          },
+          "response": []
+        },
+        {
+          "name": "get-details-by-file-name",
+          "request": {
+            "method": "GET",
+            "header": []
+          },
+          "response": []
+        },
+        {
+          "name": "check-file-name",
+          "request": {
+            "method": "GET",
+            "header": []
+          },
+          "response": []
+        }
+      ]
+    }
+  ]
+}
