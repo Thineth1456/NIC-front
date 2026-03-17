@@ -1,0 +1,87 @@
+/* src/components/AuthForm.css */
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f0f2f5;
+}
+
+.auth-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 2rem; /* give space on small screens */
+}
+
+.auth-box {
+  width: 100%;
+  max-width: 600px;   /* larger width */
+  background-color: #fff;
+  padding: 3rem 2.5rem;  /* more padding */
+  border-radius: 16px;    /* slightly bigger rounded corners */
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15);
+}
+
+.auth-title {
+  text-align: center;
+  font-size: 2.2rem;  /* bigger title */
+  font-weight: bold;
+  margin-bottom: 2rem; /* more spacing */
+}
+
+.auth-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;  /* bigger gaps between inputs */
+}
+
+.auth-input {
+  padding: 1rem 1.25rem; /* larger input fields */
+  border: 1.5px solid #ccc;
+  border-radius: 10px;
+  font-size: 1.1rem;    /* bigger font */
+  transition: border-color 0.3s;
+}
+
+.auth-input:focus {
+  border-color: #007bff;
+  outline: none;
+}
+
+.auth-button {
+  padding: 1rem 1.25rem;  /* bigger button */
+  background-color: #007bff;
+  color: #fff;
+  font-size: 1.1rem;     /* bigger font */
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.auth-button:hover {
+  background-color: #0056b3;
+}
+
+.auth-footer {
+  text-align: center;
+  margin-top: 2rem;    /* more spacing below form */
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;         /* more gap between links */
+}
+
+.auth-link {
+  background: none;
+  border: none;
+  color: #007bff;
+  cursor: pointer;
+  font-size: 1rem;      /* bigger link text */
+  text-decoration: underline;
+  padding: 0;
+}
+
+.auth-link:hover {
+  color: #0056b3;
+}

@@ -1,0 +1,128 @@
+/* --- File Upload Component Styles --- */
+.upload-container {
+  background: white;
+  padding: 32px;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+  border: 1px solid #e2e8f0;
+}
+
+.upload-container h2 {
+  margin-bottom: 24px;
+  color: var(--icarus-navy);
+  font-size: 22px;
+}
+
+/* Custom File Input Styling */
+.upload-container input[type="file"] {
+  display: block;
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 20px;
+  border: 2px dashed #cbd5e1;
+  border-radius: 8px;
+  background-color: #f1f5f9;
+  cursor: pointer;
+}
+
+/* Primary Action Buttons */
+.upload-container button {
+  background-color: var(--icarus-blue);
+  color: white;
+  padding: 10px 24px;
+  border: none;
+  border-radius: 6px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: var(--transition);
+}
+
+.upload-container button:hover {
+  background-color: #1d4ed8;
+  transform: translateY(-1px);
+}
+
+/* Invalid Data Table Section */
+.upload-container h3 {
+  margin-top: 40px;
+  margin-bottom: 16px;
+  color: #e11d48; /* Red for alert */
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 24px;
+  background: #ffffff;
+}
+
+th {
+  text-align: left;
+  background-color: #f8fafc;
+  padding: 12px 16px;
+  color: #64748b;
+  font-size: 13px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  border-bottom: 2px solid #e2e8f0;
+}
+
+td {
+  padding: 12px 16px;
+  border-bottom: 1px solid #f1f5f9;
+}
+
+/* Table Inputs */
+td input[type="text"] {
+  width: 100%;
+  padding: 8px 12px;
+  border: 1px solid #cbd5e1;
+  border-radius: 4px;
+  font-size: 14px;
+  transition: border-color 0.2s;
+}
+
+td input[type="text"]:focus {
+  outline: none;
+  border-color: var(--icarus-blue);
+  background-color: #eff6ff;
+}
+
+/* Table Action Buttons */
+td button {
+  padding: 6px 12px !important;
+  font-size: 12px !important;
+  background-color: #f1f5f9 !important;
+  color: #475569 !important;
+  border: 1px solid #cbd5e1 !important;
+}
+
+td button:hover {
+  background-color: #e2e8f0 !important;
+  color: #1e293b !important;
+  transform: none !important;
+}
+
+/* Red Remove Button */
+td button:last-child:hover {
+  background-color: #fee2e2 !important;
+  color: #b91c1c !important;
+  border-color: #fecaca !important;
+}
+
+/* Generate Report Button */
+.report-btn {
+  margin-top: 20px;
+  width: 100%;
+  background-color: #10b981 !important; /* Success Green */
+  font-size: 16px;
+  padding: 14px !important;
+}
+
+.report-btn:hover {
+  background-color: #059669 !important;
+}

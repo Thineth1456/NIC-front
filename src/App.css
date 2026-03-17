@@ -1,0 +1,64 @@
+/* --- Global Layout Wrapper --- */
+.app-layout {
+  display: flex;
+  min-height: 100vh;
+  background-color: var(--icarus-bg);
+}
+
+/* --- Main Content Area --- */
+.main-content {
+  flex: 1;
+  margin-left: var(--sidebar-width); /* Push content right to make room for fixed sidebar */
+  padding: 40px;
+  min-height: 100vh;
+  transition: margin-left 0.3s ease;
+}
+
+/* --- Breadcrumb Navigation --- */
+.breadcrumb {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 32px;
+  font-size: 14px;
+}
+
+.breadcrumb-label {
+  color: #94a3b8; /* Slate 400 */
+}
+
+.breadcrumb-current {
+  color: var(--icarus-blue);
+  background-color: #eff6ff; /* Very light blue */
+  padding: 4px 12px;
+  border-radius: 6px;
+  font-weight: 600;
+  text-transform: capitalize;
+}
+
+/* --- Animations --- */
+.fade-in-section {
+  animation: fadeIn 0.5s ease-out forwards;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* --- Responsive Fixes --- */
+@media (max-width: 768px) {
+  .sidebar {
+    transform: translateX(-100%); /* Hide sidebar on mobile */
+  }
+  .main-content {
+    margin-left: 0;
+    padding: 20px;
+  }
+}
